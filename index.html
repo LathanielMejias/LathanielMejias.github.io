@@ -1,0 +1,796 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lathaniel Mejias - Software Engineer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/resume.css" />
+		<link rel="stylesheet" href="assets/css/fancybox.css" />
+		<link rel="stylesheet" href="assets/css/carousel.css" />
+		<link rel="stylesheet" href="assets/css/jquery.modal.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+	</head>
+	<body class="is-preload">
+		<!-- Modals -->
+			<!-- Reader Modal -->
+			<div id="reader-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">
+							<h3>Bilingual Ebook/Audiobook Reader</h3>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Technologies</h5>
+						<div class="dev-icon-section">
+							<span class="dev-icon-wrapper">
+								<i class="devicon-python-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Python</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-nodejs-plain colored dev-icon"></i>
+								<span class="dev-icon-label">NodeJS</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-javascript-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Javascript</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-html5-plain colored dev-icon"></i>
+								<span class="dev-icon-label">HTML</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-css3-plain colored dev-icon"></i>
+								<span class="dev-icon-label">CSS</span>
+							</span>
+						</div>
+						
+						<h5>Gallery</h5>
+						<div class="carousel-container">
+							<div class="carousel f-carousel" id="reader-carousel">
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="https://www.youtube.com/watch?v=lpaTzzIIpJA">
+									<div class="carousel-video-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/yt-thumbnail2.jpg);"></span>
+									</div>
+								</a>
+								<a
+									class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-01.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-01.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-02.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-02.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-03.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-03.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-04.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-04.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-05.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-05.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-06.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-06.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-07.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-07.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="reader-gallery" data-src="media/projects/reader/reader-08.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/reader/reader-08.jpg);"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<hr class="modal-hr"/>
+						<h5>Project Description</h5>
+						<p>I wanted an easy way to read books in foreign languages, hear the audio (for correct pronunciation), and save useful vocabulary.</p>
+						<div>I started with the epub file and the mp3 audiobook file and added the following:</div>
+						<ul class="description-section">
+							<li>Synchronized audio with text at the sentence level
+								<ul class="description-section">
+									<li>Clicking any sentence seeks to its corresponding segment in the audio</li>
+									<li>Seeking anywhere in the audio will take you to the corresponding text</li>
+									<li>Automatically highlights text as the audio plays</li>
+								</ul>
+							</li>
+							<li>Can navigate by sentence on the bottom left
+								<ul class="description-section">
+									<li>Previous, Replay, Next</li>
+								</ul>
+							</li>
+							<li>Added pagination
+								<ul class="description-section">
+									<li>Split the epub into about 90 &quot;pages&quot;</li>
+									<li>Allows you to bookmark specific pages and keep your place</li>
+									<li>Page navigation gets added to browser history, so you can press Back to get to previous pages</li>
+									<li>Your place in the audio/text will be remembered after page refreshes</li>
+								</ul>
+							</li>
+							<li>Added a search function that works across pages
+								<ul class="description-section">
+									<li>Supports Match Case and Whole Word searches</li>
+									<li>Can select the word and press Ctrl+F to open the search or click the magnifying glass button</li>
+								</ul>
+							</li>
+							<li>Matched Italian sentences to English paragraphs
+								<ul class="description-section">
+									<li>Can click on the bar at the bottom to open the corresponding English section</li>
+								</ul>
+							</li>
+							<li>Added an Anki (flashcard program) button that appears on every sentence
+								<ul class="description-section">
+									<li>Adds the sentence and audio to the note automatically</li>
+									<li>English translation can be manually copied from the bottom English panel</li>
+									<li>Contains basic WYSIWYG to style Anki fields</li>
+									<li>Sentences saved to Anki will be subtly underlined afterwards (which persists after refreshing)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<div></div>
+						<a href="#" rel="modal:close" class="button">Close</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- KKLC Modal -->
+			<div id="kklc-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">
+							<h3>Kodansha's Kanji Learning Course Android App</h3>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Technologies</h5>
+						<div class="dev-icon-section">
+							<span class="dev-icon-wrapper">
+								<i class="devicon-ionic-original colored dev-icon"></i>
+								<span class="dev-icon-label">Ionic</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-javascript-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Javascript</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-html5-plain colored dev-icon"></i>
+								<span class="dev-icon-label">HTML</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-css3-plain colored dev-icon"></i>
+								<span class="dev-icon-label">CSS</span>
+							</span>
+						</div>
+						
+						<h5>Gallery</h5>
+						<div class="carousel-container">
+							<div class="carousel f-carousel" id="kklc-carousel">
+								<a
+									class="f-carousel__slide" data-fancybox="kklc-gallery" data-src="media/projects/kklc/kklc-01.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/kklc/kklc-01.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="kklc-gallery" data-src="media/projects/kklc/kklc-02.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/kklc/kklc-02.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="kklc-gallery" data-src="media/projects/kklc/kklc-03.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/kklc/kklc-03.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="kklc-gallery" data-src="media/projects/kklc/kklc-04.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/kklc/kklc-04.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="kklc-gallery" data-src="https://youtube.com/shorts/356K-7EFVMo">
+									<div class="carousel-video-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/kklc/yt-thumbnail2.jpg);"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<hr class="modal-hr"/>
+						<h5>Project Description</h5>
+						<p>
+							<strong>Background:</strong> The Japanese language has 2,136 official characters called "Kanji" that are expected to be learned to be able to consume everyday content.
+							Not only that, but the pronunciation ("reading") of each character can differ completely depending on which word it appears in.
+							So, to aid in my learning Japanese, I got a book called "The Kodansha Kanji Learner's Course," and while it is very thorough and helpful, it is quite a hefty book to lug around.
+							But, my cell phone, however, is not! So, I created a web app that can compile into an Android app with the help of the Ionic Framework.
+						</p>
+						<p>
+							With the app, I can:
+							<ul class="description-section">
+								<li>Navigate through all 2,136 Kanji and some relevant vocabulary words</li>
+								<li>View its stroke order (which is standardized)</li>
+								<li>Hide/Show the Kanji's Readings and English meaning</li>
+								<li>Tap any other Kanji in a word to cross-reference its entry</li>
+								<li>Navigate back through the history of visited Kanji entries</li>
+							</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<div></div>
+						<a href="#" rel="modal:close" class="button">Close</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Scale Modal -->
+			<div id="scale-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">
+							<h3>Automated Coffee Scale</h3>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Technologies</h5>
+						<div class="dev-icon-section">
+							<span class="dev-icon-wrapper">
+								<i class="devicon-raspberrypi-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Raspberry Pi</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-vuejs-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Vue.js</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-python-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Python</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-javascript-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Javascript</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-html5-plain colored dev-icon"></i>
+								<span class="dev-icon-label">HTML</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-css3-plain colored dev-icon"></i>
+								<span class="dev-icon-label">CSS</span>
+							</span>
+						</div>
+						
+						<h5>Gallery</h5>
+						<div class="carousel-container">
+							<div class="carousel f-carousel" id="scale-carousel">
+								<a
+									class="f-carousel__slide" data-fancybox="scale-gallery" data-src="media/projects/scale/scale-01.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/scale-01.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="scale-gallery" data-src="media/projects/scale/scale-02.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/scale-02.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="scale-gallery" data-src="media/projects/scale/scale-03.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/scale-03.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="scale-gallery" data-src="media/projects/scale/scale-04.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/scale-04.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="scale-gallery" data-src="https://www.youtube.com/watch?v=tI4u8njFTEU">
+									<div class="carousel-video-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/demo-yt-thumbnail2.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="scale-gallery" data-src="https://www.youtube.com/watch?v=mxF09lpn9wg">
+									<div class="carousel-video-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/scale/walkthrough-yt-thumbnail2.jpg);"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<hr class="modal-hr"/>
+						<h5>Project Description</h5>
+						<p>
+							Since I like to try different coffee beans, I make sure to weigh out my beans each time I make coffee to standardize the tasting process.
+							This got a little tedious doing it every day, sometimes 2-3 times a day. I know they make grinders with built-in scales, but my grinder was fairly new and working well,
+							so I decided to create my own scale that could make use of my existing grinder. 
+						</p>
+						<p>
+							I got a Raspberry Pi, a weight sensor, a touchscreen and some legos, and got to work. I decided to go with a web app, this way I could access the site from my phone if
+							I ever felt the need to start grinding my coffee remotely. I wanted some quick and simple, so I used Vue.JS here for the frontend and Python for the server and hardware control.
+							The display automatically turns on after touching anywhere on it, and shuts off after inactivity. 
+						</p>
+						<p>
+							The site allows me to:
+							<ul class="description-section">
+								<li>Select the ratio of coffee to water</li>
+								<li>Set how much coffee to grind based on different units (e.g. ounces, milliliters, cups, and servings)</li>
+								<li>Manually start and stop the grinder (since the hardware switch is now always switched on)</li>
+							</ul> 
+						</p>
+					</div>
+					<div class="modal-footer">
+						<div></div>
+						<a href="#" rel="modal:close" class="button">Close</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bell Modal -->
+			<div id="bell-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">
+							<h3>Salesforce-Integrated Sales Bell</h3>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Technologies</h5>
+						<div class="dev-icon-section">
+							<span class="dev-icon-wrapper">
+								<i class="devicon-raspberrypi-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Raspberry Pi</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-python-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Python</span>
+							</span>
+						</div>
+						
+						<h5>Gallery</h5>
+						<div class="carousel-container">
+							<div class="carousel f-carousel" id="bell-carousel">
+								<a
+									class="f-carousel__slide" data-fancybox="bell-gallery" data-src="media/projects/bell/bell-front.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/bell/bell-front.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="bell-gallery" data-src="media/projects/bell/bell-side.jpg">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/bell/bell-side.jpg);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="bell-gallery" data-src="media/projects/bell/bell-test.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/bell/bell-test.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="bell-gallery" data-src="https://www.youtube.com/watch?v=2alWqfpYcDg">
+									<div class="carousel-video-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/bell/yt-thumbnail2.jpg);"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<hr class="modal-hr"/>
+						<h5>Project Description</h5>
+						<p>
+							My previous employer used to ring this very bell manually whenever a big sale went through. Someone wondered if we could automate something,
+							and I came up with this. I used a Raspberry Pi Zero W to monitor Salesforce for sales, and when it detects one, it drives the solenoid which rings the bell.
+							Smaller sales would ding once while bigger sales would ding 3 times.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<div></div>
+						<a href="#" rel="modal:close" class="button">Close</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- FTG Modal -->
+			<div id="ftg-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">
+							<h3>Freeze Tag Android Game</h3>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Technologies</h5>
+						<div class="dev-icon-section">
+							<span class="dev-icon-wrapper">
+								<i class="devicon-android-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Android</span>
+							</span>
+							<span class="dev-icon-wrapper">
+								<i class="devicon-java-plain colored dev-icon"></i>
+								<span class="dev-icon-label">Java</span>
+							</span>
+						</div>
+						
+						<h5>Gallery</h5>
+						<div class="carousel-container">
+							<div class="carousel f-carousel" id="ftg-carousel">
+								<a
+									class="f-carousel__slide" data-fancybox="ftg-gallery" data-src="media/projects/ftg/FTG-map.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/ftg/FTG-map.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="ftg-gallery" data-src="media/projects/ftg/FTG-screenshot.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/ftg/FTG-screenshot.png);"></span>
+									</div>
+								</a>
+								<a class="f-carousel__slide" data-fancybox="ftg-gallery" data-src="media/projects/ftg/FTG-screenshot-directions.png">
+									<div class="carousel-thumbnail-wrapper">
+										<span class="carousel-thumbnail" style="background-image: url(media/projects/ftg/FTG-screenshot-directions.png);"></span>
+									</div>
+								</a>
+								<a 
+									class="f-carousel__slide" 
+									data-fancybox="ftg-gallery" 
+									data-caption="Accompanying Paper"
+									data-src="media/projects/ftg/ftg.pdf">
+									<div class="carousel-pdf-thumbnail-wrapper">
+										<img src="images/PDF_file_icon.png" width="56" height="70" alt="ftg screenshot" />
+										<div>Accompanying</div>
+										<div>Paper</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<hr class="modal-hr"/>
+						<h5>Project Description</h5>
+						<p>
+							This is a multiplayer Android game I made as part of an independent study in graduate school. 
+							One player is randomly assigned to be "it" and has to freeze the others before the timer runs out.
+							Players can be unfrozen by others on their team. For more information on this, see the accompanying paper I wrote above.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<div></div>
+						<a href="#" rel="modal:close" class="button">Close</a>
+					</div>
+				</div>
+			</div>
+			<!-- /Modals -->
+
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/portrait.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Lathaniel Mejias</a></h1>
+					<p>Software Engineer/Data Analyst<br />
+					with 7+ years of experience</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#resume">Résumé</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/lathanielmejias/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li class="spamspan-container"><span class="spamspan"><span class="u">LathanielM</span> [at] <span class="d">gmail [dot] com</span> (<span class="t"> </span>, <span class="subject">I saw your website</span>)</span></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<section id="about">
+								<div class="image main" data-position="center">
+									<img src="images/golden-gate2.avif" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h3 class="page-title">Lathaniel Mejias | Software Engineer/Data Analyst</h3>
+										<h4>Innovating through code to solve real-world problems</h4>
+									</header>
+									<p>Hi, I'm Lathaniel, a software engineer with 7+ years of full-stack experience, specializing in innovative solutions that enhance business efficiency and user experience. Proficient in <strong>Java</strong>, <strong>TypeScript</strong>, and <strong>JavaScript</strong>, with expertise in <strong>Angular</strong>, <strong>Spring</strong>, and <strong>Hibernate</strong>, I excel in creating seamless, scalable applications. Highlights include optimizing complex systems, <strong>developing APIs</strong>, and crafting <strong>robust UI libraries</strong>.</p>
+								</div>
+							</section>
+
+						<!-- Projects -->
+							<section id="projects">
+								<div class="container">
+									<h3>A Few Projects</h3>
+									<p> Outside of work, I enjoy studying foreign languages, gaming, and trying out different teas and coffees. You may see that reflected in some of my projects below: </p>
+									<div class="features">
+										<article>
+											<div class="image">
+												<a href="#reader-modal" rel="modal:open" class="project-thumbnail" style="background-image: url(media/projects/reader/reader-01.png);"></a>
+											</div>
+											<div class="inner">
+												<h4>Bilingual Ebook/Audiobook Reader</h4>
+												<p>A simple web app to read books in foreign languages, listen to the audiobook (for correct pronunciation), and save useful vocabulary.</p>
+											</div>
+										</article>
+										<article>
+											<div class="image">
+												<a href="#kklc-modal" rel="modal:open" class="project-thumbnail" style="background-image: url(media/projects/kklc/kklc-01.jpg);"></a>
+											</div>
+											<div class="inner">
+												<h4>Kanji Learning Android App</h4>
+												<p>An Ionic web app that digitizes the content of the book "The Kodansha Kanji Learner's Course" for easier studying on the go.</p>
+											</div>
+										</article>
+										<article>
+											<div class="image">
+												<a href="#scale-modal" rel="modal:open" class="project-thumbnail" style="background-image: url(media/projects/scale/scale-01.jpg);"></a>
+											</div>
+											<div class="inner">
+												<h4>Automated Coffee Scale</h4>
+												<p>A programmable scale that integrates with my Baratza coffee grinder. No longer do you have to weigh out the right amount of coffee manually. Just enter the desired weight and press "Start!"</p>
+											</div>
+										</article>
+										<article>
+											<div class="image">
+												<a href="#bell-modal" rel="modal:open" class="project-thumbnail" style="background-image: url(media/projects/bell/bell-front.jpg);"></a>
+											</div>
+											<div class="inner">
+												<h4>Salesforce-Integrated Sales Bell</h4>
+												<p>I programmed a Raspberry Pi to drive a solenoid to ring a bell every time my previous employer had a sale come through Salesforce.</p>
+											</div>
+										</article>
+										<article>
+											<div class="image">
+												<a href="#ftg-modal" rel="modal:open" class="project-thumbnail" style="background-image: url(media/projects/ftg/FTG-screenshot.PNG);"></a>
+											</div>
+											<div class="inner">
+												<h4>Freeze Tag Android Game</h4>
+												<p>A multiplayer Android game I made as part of an independent study in graduate school. One player is randomly assigned to be "it" and has to freeze the others before the timer runs out.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Resume -->
+							<section id="resume" class="grey-section">
+								<div class="container">
+									<div class="row section-intro">
+										<div class="col-twelve">
+											<h3>Résumé</h3>
+											<div class="lead">Here are some of technologies I have worked with: </div>
+											<br>
+											<div>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-java-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Java</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-python-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Python</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-javascript-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Javascript</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-angular-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Angular</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-nodejs-plain colored dev-icon"></i>
+													<span class="dev-icon-label">NodeJS</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-html5-plain colored dev-icon"></i>
+													<span class="dev-icon-label">HTML</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-css3-plain colored dev-icon"></i>
+													<span class="dev-icon-label">CSS</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-mysql-plain colored dev-icon"></i>
+													<span class="dev-icon-label">MySQL</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-sqlite-plain colored dev-icon"></i>
+													<span class="dev-icon-label">SQLite</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-ionic-original colored dev-icon"></i>
+													<span class="dev-icon-label">Ionic</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-vuejs-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Vue.js</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-raspberrypi-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Raspberry Pi</span>
+												</span>
+												<span class="dev-icon-wrapper">
+													<i class="devicon-android-plain colored dev-icon"></i>
+													<span class="dev-icon-label">Android</span>
+												</span>
+											</div>
+										</div>   		
+									</div> <!-- /section-intro--> 
+									<div class="row resume-timeline">
+										<div class="col-twelve resume-header">
+											<h3>Work Experience</h3>
+										</div> <!-- /resume-header -->
+										<div class="col-twelve">
+											<div class="timeline-wrap">
+												<div class="timeline-block">
+													<div class="timeline-ico">
+														<i class="fa fa-graduation-cap"></i>
+													</div>
+													<div class="timeline-header">
+														<h3>Senior Software Engineer</h3>
+														<p>2014 - 2022</p>
+													</div>
+													<div class="timeline-content">
+														<h4>Certain Inc.</h4>
+														<div>
+															<ul class="resume-section">
+																<li>Refactored the accommodations module, cutting load times from 2 minutes to 3 seconds.</li>
+																<li>Developed a company status page to track uptime using <strong>Java</strong>, <strong>AngularJS</strong>, and <strong>Spring Boot</strong>.</li>
+																<li>Built an ETL system for near real-time API data extraction, resolving bottlenecks.</li>
+																<li>Led the creation of an <strong>Angular 12</strong> UI library to standardize branding and improve usability.</li>
+															</ul>
+														</div>
+													</div>
+												</div> <!-- /timeline-block -->
+												<div class="timeline-block">
+													<div class="timeline-ico">
+														<i class="fa fa-graduation-cap"></i>
+													</div>
+													<div class="timeline-header">
+														<h3>Research / Programmer</h3>
+														<p> 2013 - 2014</p>
+													</div>
+													<div class="timeline-content">
+														<h4>Northeastern Illinois University</h4>
+														<ul class="resume-section">
+															<li>Analyzed datasets and implemented algorithms to support a natural dialogue system.</li>
+														</ul>
+													</div>
+												</div> <!-- /timeline-block -->
+												<div class="timeline-block">
+													<div class="timeline-ico">
+														<i class="fa fa-graduation-cap"></i>
+													</div>
+													<div class="timeline-header">
+														<h3>ACM Chapter President</h3>
+														<p>2013 - 2014</p>
+													</div>
+													<div class="timeline-content">
+														<h4>Northeastern Illinois University</h4>
+														<ul class="resume-section">
+															<li>Founded and managed the university's computer science club.</li>
+															<li>Organized workshops, robotics tournaments, and pair-programming sessions.</li>
+														</ul>
+													</div>
+												</div> <!-- /timeline-block -->
+											</div> <!-- /timeline-wrap -->   			
+										</div> <!-- /col-twelve -->
+									</div> <!-- /resume-timeline -->
+									<div class="row resume-timeline">
+										<div class="col-twelve resume-header">
+											<h3>Education</h3>
+										</div> <!-- /resume-header -->
+										<div class="col-twelve">
+											<div class="timeline-wrap">
+												<div class="timeline-block">
+													<div class="timeline-ico">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<div class="timeline-header">
+														<h3>Master of Science</h3>
+
+														<p>2012 - 2014</p>
+													</div>
+													<div class="timeline-content">
+														<h4>Northeastern Illinois University</h4>
+														<ul class="resume-section">
+															<li><strong>Major:</strong> Computer Science</li>
+															<li><strong>GPA:</strong> 3.92/4.00</li>
+														</ul>
+													</div>
+												</div> <!-- /timeline-block -->
+												<div class="timeline-block">
+													<div class="timeline-ico">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<div class="timeline-header">
+														<h3>Bachelor of Arts</h3>
+														
+														<p>2006 - 2010</p>
+													</div>
+													<div class="timeline-content">
+														<h4>University of Illinois at Urbana-Champaign</h4>
+														<ul class="resume-section">
+															<li><strong>Major:</strong> Spanish</li>
+															<li><strong>Minor:</strong> Linguistics</li>
+															<li><strong>GPA:</strong> 3.67/4.00</li>
+														</ul>
+													</div>
+												</div> <!-- /timeline-block -->
+											</div> <!-- /timeline-wrap -->   			
+										</div> <!-- /col-twelve -->
+									</div> <!-- /resume-timeline -->
+								</div> <!-- /container -->
+							</section> <!-- /features -->
+	
+						<!-- Contact -->
+							<section id="contact">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Feel free to contact me with any questions or job opportunities.</p>
+									<form method="post" id="contactForm" class="kf-form" action="https://kwesforms.com/api/f/IIBCUmDhVklKm1fOLWxP">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" rules="required|email|max:50" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6" rules="required"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input name="submit" type="submit" class="primary" value="Send Message" /></li>
+													<li><input name="reset" type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.modal.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/fancybox.umd.js"></script>
+			<script src="assets/js/carousel.umd.js"></script>
+			<script src="assets/js/spamspan.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://kwesforms.com/v2/kf-script.js" defer></script>
+	</body>
+</html>
